@@ -1,0 +1,21 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# data
+data/raw/
+data/processed/filtered_complaints.csv
+data/processed/filtered_complaints.parquet
+vector_store/
+
+# IDEs
+.vscode/
+.idea/
+.ipynb_checkpoints/
+*.log

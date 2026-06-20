@@ -1,0 +1,12 @@
+pandas
+pyarrow
+sentence-transformers
+chromadb
+faiss-cpu
+langchain
+langchain-community
+streamlit
+gradio
+google-generativeai
+pytest
+tqdm
