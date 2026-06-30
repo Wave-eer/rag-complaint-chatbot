@@ -66,3 +66,10 @@ Execute unit tests using `pytest`:
 ```bash
 pytest
 ```
+
+
+## Reproducing the Data Pipeline
+To reproduce the data pipeline and retrieve the data versions, make sure you have DVC installed and run:
+`ash
+dvc pull
+`
