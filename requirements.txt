@@ -10,3 +10,7 @@ gradio
 google-generativeai
 pytest
 tqdm
+matplotlib
+seaborn
+jupyter
+numpy

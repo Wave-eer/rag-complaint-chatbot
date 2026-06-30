@@ -66,3 +66,22 @@ Execute unit tests using `pytest`:
 ```bash
 pytest
 ```
+
+
+## Reproducing the Data Pipeline
+To reproduce the data pipeline and retrieve the data versions, make sure you have DVC installed and run:
+`ash
+dvc pull
+`
+
+
+## Credit Scoring Business Understanding
+
+### (a) Influence of Basel II on Model Interpretability
+Basel II emphasizes stringent risk measurement and capital adequacy. Regulatory bodies require that credit scoring models be transparent, well-documented, and interpretable. This ensures that the risk assessments can be audited and validated for fairness and accuracy, rather than acting as a 'black box'.
+
+### (b) Proxy Variables and Business Risks
+In the absence of a direct default label in the Xente dataset, a proxy variable (e.g., identifying fraudulent behavior or anomalies) is necessary to approximate credit risk. Relying on a proxy introduces business risks: the proxy may not perfectly correlate with actual default, potentially leading to inaccurate risk profiles, high false positive rates, or denying credit to valid customers.
+
+### (c) Trade-offs Between Interpretability and Performance
+In a regulated financial context, there is a constant trade-off between an interpretable model (like Logistic Regression with Weight of Evidence, which allows regulators to clearly see how each feature contributes to the score) and a high-performance model (like Gradient Boosting, which captures complex, non-linear relationships but lacks transparency). Often, the interpretable model is preferred for compliance, even if it sacrifices a small margin of predictive accuracy.

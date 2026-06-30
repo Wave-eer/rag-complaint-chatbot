@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def run_eda(input_path='C:/Users/arsema/Desktop/complaints/data/complaints.csv', output_dir='notebooks/plots', sample_rows=100000):
+def run_eda(input_path='data/raw/complaints.csv', output_dir='notebooks/plots', sample_rows=100000):
     print(f"Running Exploratory Data Analysis on a representative sample of {sample_rows} rows...")
     os.makedirs(output_dir, exist_ok=True)
     
