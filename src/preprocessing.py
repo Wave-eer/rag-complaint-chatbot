@@ -110,6 +110,6 @@ def preprocess_complaints(input_path, output_path):
 
 if __name__ == "__main__":
     preprocess_complaints(
-        input_path='C:/Users/arsema/Desktop/complaints/data/complaints.csv',
+        input_path='data/raw/complaints.csv',
         output_path='data/processed/filtered_complaints.csv'
     )
